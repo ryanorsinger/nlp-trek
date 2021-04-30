@@ -12,7 +12,8 @@
 	- season
 	- location
 	- character
-	- line
+	- character's line
+	- some lines are captain's logs or actions
 
 ## Regular Expressions in Each Episode
 - Location is denoted by square brackets like `[Bridge]`, `[Transporter room]`, or `[Ferengi Science Lab]` followed by dialog until the next location denoted.
@@ -56,7 +57,6 @@
 - Dialog Generator
 	- Episode generator
 	- Character based chatbot like a Picard chatbot
-	- 
 
 ## MVP
 - Acquire all episodes from a specific series
