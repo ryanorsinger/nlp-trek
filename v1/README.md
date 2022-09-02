@@ -2,7 +2,7 @@
 
 ## Analyzing Star Trek Transcripts with Natural Language Processing
 
-## Data Source(s)
+## Data Source
 - Text from http://www.chakoteya.net/StarTrek/
 
 ## What is my level of observation?
@@ -30,31 +30,16 @@
 	- Crew logs look like `Personal log, Commander William Riker. Stardate 41153.7.` on their own line. 
 - Stardate is the word stardate followed by a number only one decimal `41153.7`
 
-## Questions
-- Who speaks the most?
-- Sentiment by character?
-	- Does the sentiment of a character change over time?
-	- Does the sentiment of episode get more positive/negative over time?
-- Topics by speaker? Who is talking about what?
-- Topics by background (Federation vs. other groups)
-- Who takes the most actions? What kind of actions
-- Character prediction classifier
-	- Make a model that takes in text and returns a prediction of which character
-	- predict_character("Honor above all") => "Worf"
-
 ## Possibilities
 - Analytics and Exploration
 	- about who talks the most, least, etc...
-	- Analytics about Locations
+	- Analytics about locations
 	- What locations show up most frequently in episodes
 	- Analytics about only the actions
 	- n-grams
-		- for exploration
-		- concat with "-" character to add n-grams to the tf-idf vectorization process to include in modeling
-	- skip grams
 	- Word clouds
 		- by episode
-		- by season	
+		- by season
 		- by character
 		- by character in 1st season vs. last season
 - Topic modeling
@@ -68,7 +53,8 @@
 	- by episode
 	- by character
 	- by season
-
+- Character prediction classifier
+	- Make a model that takes in text and returns a prediction of which character
 - Dialog Generator
 	- Episode generator
 	- Character based chatbot like a Picard chatbot
